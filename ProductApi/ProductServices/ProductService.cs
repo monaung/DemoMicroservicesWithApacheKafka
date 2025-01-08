@@ -7,7 +7,7 @@ namespace ProductApi.ProductServices
     public class ProductService(IProducer<Null, string> producer) : IProductService
     {
 
-        private List<Product> Products;
+        private List<Product> Products = [];
         public async Task AddProduct(Product product)
         {
             Products.Add(product);
